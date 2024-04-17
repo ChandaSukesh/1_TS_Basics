@@ -16,5 +16,13 @@ axios.get(url).then((response)=>{
     const title=todo.title
     const completed=todo.completed
 
-    console.log(`Hi ${id}, my name is ${title}, have you completed? ${completed}`)
+
+    // TS throws an error, by changing the order of arguments it throws an error.
+    // logTodo(id, completed,title)
+    logTodo(id, title,completed)
+   
 })
+
+const logTodo =(id: number, title:string,completed:boolean,)=>{
+    console.log(`Hi ${id}, my name is ${title}, have you completed? ${completed}`)
+}
