@@ -22,3 +22,26 @@ let nothingMuchUndefined: undefined= undefined;
  let now : Date = new Date()
 
 
+// example of array
+// throws error
+// let myStringNames : number[]=['sukesh','chanda']
+
+let myStringNames : string[]=['sukesh','chanda']
+
+
+// example of Classes
+class Car{
+
+}
+
+const car: Car = new Car()
+
+// example for object literal
+let point :{x:number;y:number}={
+    // throws error
+    // x:'sukes',
+    // y:false
+
+    x:10,
+    y:20
+}
