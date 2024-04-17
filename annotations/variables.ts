@@ -1,4 +1,4 @@
-// type annotation example
+// Type Annotation Examples
 
 const apple : number=5;
 
