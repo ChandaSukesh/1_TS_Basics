@@ -1,6 +1,6 @@
 // Type Annotation Examples
 
-const apple: number = 5;
+let apple: number = 5;
 
 // throws error
 // const apple1 : number=false;
@@ -52,3 +52,5 @@ let i=10;
 let TodoFunction : (i:number)=>void = (i:number)=>{
     console.log(i)
 }
+
+TodoFunction(i)
