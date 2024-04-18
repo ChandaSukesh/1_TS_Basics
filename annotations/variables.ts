@@ -57,10 +57,21 @@ TodoFunction(i)
 
 
 // Functions that return the any type
-
 const json='{"a":10,"b":20}'
 
 const valueObject:{a:number,b:number}= JSON.parse(json) // here for abc we need to declare type as JSON.parse return 'any' type
 console.log(valueObject)
 // throws error
 // valueObject.rffrf
+
+
+// variable whose type cannot be inferred correctly
+let numbers=[-1,-5,20]
+let numbersAboveZero : boolean | number =false
+
+for (let i=0;i<numbers.length;i++)
+{
+    numbersAboveZero=numbers[i]   
+}
+
+// Here above if we dont write type then it throws error
