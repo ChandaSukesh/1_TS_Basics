@@ -1,6 +1,6 @@
 // Type Annotation Examples
 
-const apple : number=5;
+const apple: number = 5;
 
 // throws error
 // const apple1 : number=false;
@@ -44,4 +44,11 @@ let point :{x:number;y:number}={
 
     x:10,
     y:20
+}
+
+
+// example of Annotation around function
+let i=10;
+let TodoFunction : (i:number)=>void = (i:number)=>{
+    console.log(i)
 }
