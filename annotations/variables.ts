@@ -54,3 +54,13 @@ let TodoFunction : (i:number)=>void = (i:number)=>{
 }
 
 TodoFunction(i)
+
+
+// Functions that return the any type
+
+const json='{"a":10,"b":20}'
+
+const valueObject:{a:number,b:number}= JSON.parse(json) // here for abc we need to declare type as JSON.parse return 'any' type
+console.log(valueObject)
+// throws error
+// valueObject.rffrf
