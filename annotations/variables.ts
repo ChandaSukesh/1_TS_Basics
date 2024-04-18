@@ -71,7 +71,10 @@ let numbersAboveZero : boolean | number =false
 
 for (let i=0;i<numbers.length;i++)
 {
-    numbersAboveZero=numbers[i]   
+    if(numbers[i]>0)
+    {
+        numbersAboveZero=numbers[i]   
+    }
 }
 
 // Here above if we dont write type then it throws error
