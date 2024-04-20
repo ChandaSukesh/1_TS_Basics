@@ -1,5 +1,9 @@
 class Vehicle{
-    drive():void {
+    // drive():void {
+    //     console.log("Drive It")
+    // }
+
+    protected drive():void {
         console.log("Drive It")
     }
 }
@@ -16,16 +20,21 @@ class Car extends Vehicle{
         console.log("Honk It")
     }
     toStartDriving():void{
+        this.honk()
+        // to access parent method inside this sub class mark that method as protected
         this.drive()
     }
 }
 
 const vehicle =new Vehicle()
-vehicle.drive()
+// error as it is protected
+// vehicle.drive()
 
-const car=new Car()
-car.drive()
+// const car=new Car()
+// car.drive()
 // car.honk()
 
 // to access private methods...
+
+const car=new Car()
 car.toStartDriving()
