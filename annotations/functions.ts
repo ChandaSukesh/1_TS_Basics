@@ -15,3 +15,16 @@ function divide(a:number,b:number):number{
 const multiply = function(a:number,b:number):number {
     return a*b;
 }
+
+// destructing with annotation
+
+const todaysWeather={
+    day:new Date(),
+    weather:'sunny'
+}
+
+const logWeather=({day,weather}:{day:Date,weather:string,}):void=>{
+    console.log(day,weather);
+
+}
+logWeather(todaysWeather)
