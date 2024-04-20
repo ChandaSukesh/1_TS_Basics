@@ -1,8 +1,9 @@
 // write interface name in generic, so that we can use anywhere
 interface Vehicle{
-    name:string;
-    weight:number;
-    isSUV:boolean;
+    // no need of these three key values as we are writing of summary function.
+    // name:string;
+    // weight:number;
+    // isSUV:boolean;
     summary() : string
 }
 
@@ -16,7 +17,8 @@ const oldCars ={
 }
 
 const printCar=(car:Vehicle)=>{
-    console.log(car.name,car.weight,car.isSUV)
+    // no need of the below, becoz we can achieve it by summary function
+    // console.log(car.name,car.weight,car.isSUV)
     console.log(car.summary())
 }
 
